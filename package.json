@@ -6,7 +6,7 @@
   "scripts": {
     "start": "node ./src/server.js",
     "dev": "node --watch ./src/server.js",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "mocha test/locationController.test.js test/weatherService.test.js"
   },
   "repository": {
     "type": "git",
@@ -23,5 +23,10 @@
   "dependencies": {
     "dotenv": "^17.3.1",
     "express": "^5.2.1"
+  },
+  "devDependencies": {
+    "chai": "^6.2.2",
+    "chai-http": "^5.1.2",
+    "mocha": "^11.7.5"
   }
 }
